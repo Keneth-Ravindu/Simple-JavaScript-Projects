@@ -14,7 +14,6 @@ function newPassword() {
     allowedChars += includeNumbers ? numberChars : " ";
     allowedChars += includeSymbols ? symbolChars : " ";
 
-
     if (length <= 0) {
         return `(Password length must be at least 1)`;
     }
@@ -37,7 +36,7 @@ const includeLowercase = true;
 const includeUppercase = true;
 const includeNumbers = true;
 const includeSymbols = true;
-const diceResult = document.getElementById("result");
+const result = document.getElementById("result");
 
 const password = generatePassword(passwordLength,
                                   includeLowercase,
